@@ -1,0 +1,18 @@
+#gridContainer {
+    display: flex;
+    border: thin solid black;
+    width: 80vh;
+    height: 80vh;
+}
+
+.head {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.normal {
+    min-height: 2px;
+    min-width: 2px;
+    flex-grow: 1;
+}
