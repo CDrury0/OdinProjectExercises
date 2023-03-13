@@ -1,0 +1,46 @@
+#container {
+    width: 90vw;
+    height: 55vw;
+    border: thin solid black;
+    position: relative;
+    background-color: lightslategray;
+}
+
+#display {
+    width: 90%;
+    height: 10%;
+    margin: 3% auto;
+    border: 1px solid black;
+    background-color: lightgray;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 4vw;
+}
+
+#keypad {
+    width: 90%;
+    height: 70%;
+    background-color: lightgray;
+    border: thin solid black;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.buttonRow {
+    display: flex;
+    flex: 1;
+}
+
+button {
+    flex: 1;
+    font-size: 2.5vw;
+    margin: 1% 1%;
+}
+
+#zeroError {
+    color: red;
+    margin: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 3vw;
+    text-align: center;
+}
