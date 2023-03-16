@@ -1,5 +1,11 @@
 makeGrid(16);
 
+let colorChosen = "black";
+
+function changeColor (color) {
+    colorChosen = color;
+}
+
 function newGrid(){
     let size = prompt("Enter the number of squares per side (max 100)");
     if(size > 100){
@@ -22,8 +28,9 @@ function makeGrid(sideLength){
         for(let j = 0; j < sideLength; j++){
             const gridSquare = document.createElement("div");
             gridSquare.className = "normal";
+            gridSquare.draggable = false;
             gridSquare.addEventListener("mouseover", () => {
-                gridSquare.style.backgroundColor = "black";
+                gridSquare.style.backgroundColor = colorChosen;
             });
             columnHead.appendChild(gridSquare);
         }

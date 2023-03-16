@@ -4,12 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sketchpad</title>
     <link rel="stylesheet" href="style.css"></link>
     <script src="script.js" defer></script>
 </head>
 <body>
     <button onclick="newGrid()">New Grid</button>
+    <div id="palette">
+        <button id="black" onclick="changeColor('black')"></button>
+        <button id="red" onclick="changeColor('red')"></button>
+        <button id="orange" onclick="changeColor('orange')"></button>
+        <button id="yellow" onclick="changeColor('yellow')"></button>
+        <button id="green" onclick="changeColor('green')"></button>
+        <button id="blue" onclick="changeColor('blue')"></button>
+        <button id="purple" onclick="changeColor('purple')"></button>
+        <button id="white" onclick="changeColor('white')"></button>
+    </div>
     <div id="gridContainer"></div>
 </body>
 </html>

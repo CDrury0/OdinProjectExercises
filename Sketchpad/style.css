@@ -16,3 +16,46 @@
     min-width: 2px;
     flex-grow: 1;
 }
+
+#palette {
+    width: 80vh;
+    height: 10vh;
+    display: flex;
+}
+
+#palette > button {
+    flex: 1;
+    border: thin black solid;
+}
+
+#black {
+    background-color: black;
+}
+
+#red {
+    background-color: red;
+}
+
+#orange {
+    background-color: orange;
+}
+
+#yellow {
+    background-color: yellow;
+}
+
+#green {
+    background-color: green;
+}
+
+#blue {
+    background-color: blue;
+}
+
+#purple {
+    background-color: purple;
+}
+
+#white {
+    background-color: white;
+}
