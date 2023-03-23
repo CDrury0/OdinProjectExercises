@@ -5,9 +5,10 @@
 
 body {
     overflow: hidden;
-    margin: 0 2.5vw;
+    margin: 0 7.5vw;
     padding: 0;
     display: inline-flex;
+    background-color: #0e0e0e;
 }
 
 #imagePanel {
@@ -36,10 +37,17 @@ body {
     font-family: "Norse Bold";
 }
 
-#form {
-    width: 65vw;
+#formBack {
+    width: 55vw;
     height: 100vh;
-    background-color: aqua;
+    background-color: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#formBack > p > a, #formBack > p > a:visited {
+    color: #596D48;
 }
 
 #odinLogo {
@@ -59,4 +67,92 @@ body {
 
 .creditText > a, .creditText > a:visited {
     color: white;
+}
+
+p {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5vw;
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+
+p > span {
+    font-style: italic;
+}
+
+#formDiv {
+    margin-top: 3vw;
+    height: auto; /*remove height later to allow content size to determine height automatically*/
+    background-color: white;
+}
+
+form {
+    padding: 1vw 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.formFieldRow {
+    margin-left: 3vw;
+    display: flex;
+}
+
+.formPair {
+    margin-right: 2vw;
+}
+
+label {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #596D48;
+    font-weight: 500;
+    font-size: 1vw;
+    margin-top: 0.5vw;
+}
+
+input, label {
+    display: block;
+}
+
+input {
+    margin-bottom: 1vw;
+    border-radius: 5px;
+    border: thin solid #f0f0f0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5vw;
+    background-color: #fAfAfA;
+}
+
+input:focus {
+    outline: none;
+    border: thin solid blue;
+    box-shadow: 2px 3px rgba(200, 200, 200, 0.5);
+}
+
+input:invalid {
+    outline: none;
+    border: thin solid red;
+    box-shadow: 2px 3px rgba(200, 200, 200, 0.5);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#formDivShadow {
+    height: 1vh;
+    background-image: linear-gradient(to bottom, rgba(200, 200, 200, 0.5), rgba(200, 200, 200, 0));
+}
+
+#submitButton {
+    align-self:flex-start;
+    margin-left: 3vw;
+    margin-top: 2vw;
+    padding: 0.5vw 1vw;
+    background-color: #596D48;
+    color: white;
+    font-size: 1.5vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 3px 5px rgba(200, 200, 200, 0.5);
 }
